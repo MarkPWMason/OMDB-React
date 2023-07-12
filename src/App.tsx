@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import styles from './App.module.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MovieComp from './components/MovieComp';
+import MovieModal from './components/MovieModal';
+import Blurer from './components/Blurer';
+import ContextsProvider from './store/context/context';
 
-function App() {
+const App = () => {
+  const [searchData, setSearchData] = useState([]);
+  const [searchMovie] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <ContextsProvider>
+        <Header searchData={searchData} setSearchData={setSearchData} />
+        <MovieComp searchData={searchData} searchMovie={searchMovie} />
+        <MovieModal />
+        <Blurer />
+      </ContextsProvider>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

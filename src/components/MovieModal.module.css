@@ -1,0 +1,62 @@
+.movieModal{
+    position: fixed;
+    transform: translateX(-50%);
+    top: 50px;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    border: 7px solid black;
+    border-radius: 10px;
+    background-color: #fae8ef;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.textContent {
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+    overflow-y: auto;
+}
+
+.ratings{
+    position: relative;
+    margin: 30px;
+    display: flex;
+    text-align: left;
+}
+
+.tableRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableContent {
+    padding-right: 30px;
+}
+
+.exitBtn {
+    position: absolute;
+    background-color: #cdb4db;
+    margin: 3px 3px 0px 0px;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+.exitBtn:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+.poster {
+    padding: 5px;
+    border-radius: 20px;
+    width: 400px;
+    height: 590px;
+}

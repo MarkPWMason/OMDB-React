@@ -1,0 +1,38 @@
+.image {
+  position: relative;
+  display: flex;
+  border: 5px solid black;
+  border-radius: 12px;
+  
+}
+
+.imageComp {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 400px;
+}
+
+.image:hover {
+  border: 5px solid black;
+  border-radius: 12px;
+}
+
+.details {
+  position: absolute;
+  visibility: hidden;
+  width: auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+.title{
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.text{
+  padding: 0px 30px 30px 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: auto;
+  background-color: #fae8ef;
+  border: 5px solid black;
+  justify-content: center;
+}
+.movieContent {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 0px;
+}
+
+.paginationBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.moviePoster {
+  height: 400px;
+  width: 260px;
+}
+
+.media:hover {
+  cursor: pointer;
+}
